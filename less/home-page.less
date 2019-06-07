@@ -45,16 +45,52 @@
     display: flex;
     justify-content: center;
 
+
+    @media @phone {
+    .walk {
+        width: 100%;
+        margin: 0 auto;
+        .flex(reverse-column, wrap, center, flex-start);      
+   }
+  }
+
     .walk-text {
       width: 50%;
 
-      h3 {
-        margin-bottom: 10px;
+     @media @phone {
+         .walk-text {
+        width: 100%;
+        margin: 0 auto;
+        .flex(column, wrap, flex-end, center);
+         }
+
+       }
       }
 
+      h3 {
+        margin-bottom: 10px;
+      
+     @media @phone {  h3 {
+            width: 100%;
+            margin: 0 auto;
+     }
+
+        }
+      }
+      
+       
       p {
         margin-bottom: 26px;
-      }
+ @media @phone {
+   p  {
+            width: 100%;
+            margin: 0 auto;
+   }
+        }
+            }
+        
+
+      
 
       .btn {
         
@@ -68,6 +104,20 @@
           background: black;
           font-family: 'Ubuntu', sans-serif;
           font-size: 1.9rem;
+
+          @media @phone {
+            .btn{
+              width: 100%;
+              margin: 0 auto;
+              .flex(column, nowrap, center, center);
+
+            button {
+              width: 80%;
+          }
+
+         }
+                    
+          }
         }
       }
     }
@@ -83,4 +133,4 @@
       }
     }
   }
-}// home
+// home

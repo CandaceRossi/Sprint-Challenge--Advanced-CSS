@@ -8,7 +8,7 @@
     .pad(30px, 15px, 0, 0);
     h1{
         font-size: 3.9rem;
-        .pad(15px, 15px, 15px, 15px)
+        .pad(15px, 15px, 15px, 15px);
     }
     a {
         .pad( 15px, 10px, 15px, 15px);
@@ -26,14 +26,80 @@
     .pad(0px, 0px, 5px, 10px);
     .flex( column, nowrap, center, flex-start);
         
+     @media @phone {
+            .intro {
+            width: 100%;
+            margin: 0 auto;
+            .pad(0px, 0px, 5px, 10px);
+            .flex( column, nowrap, center, flex-start);
+            }
+            
+        }
+
         img {
             .pad(5px, 0px, 0, 0);
             border-radius: 8px;
+        
+            @media @phone {
+                .flex(column, wrap, center, center);
+                width: 100%;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
         }
             h2 {
                .pad(0px, 10px, 0, 0);
             }
-        p   {
     
-        }
 }
+
+@media @phone {
+.space-images {
+
+        .flex(column, wrap, center, center);
+         width: 100%;
+         margin: 0 auto;
+
+        .blast {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .sky {
+            display: none;
+        }
+        .launch {
+            display: none;
+        }
+    }
+
+
+@media @phone {
+    .walk {
+        width: 100%;
+        margin: 0 auto;
+        .flex(reverse-column, wrap, center, flex-start);
+        border: 1px solid red;
+        
+    .walk-text {
+        width: 100%;
+        margin: 0 auto;
+        .flex(column, wrap, flex-end, center);
+
+        h3 {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+        p{
+            width: 100%;
+            margin: 0 auto;
+        }
+            }
+        }
+    }
+}
+
+
