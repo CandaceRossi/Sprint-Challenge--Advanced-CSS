@@ -1,1 +1,15 @@
 // Mixins Here
+.flex(@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.pad(@top, @bottom, @left, @right) {
+    padding-top: @top;
+    padding-bottom: @bottom;
+    padding-left: @left;
+    padding-right: @right;
+}
