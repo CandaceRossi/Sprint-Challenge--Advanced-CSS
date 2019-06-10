@@ -12,7 +12,11 @@
     }
   
   }
-
+@media @phone {
+  .intro {
+    .flex(column, wrap, center, flex-start);
+  }
+}
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +41,16 @@
       margin-top: 13px;
     }
   }
-
+@media @phone {
+  h3{
+    width: 100%;
+    .flex(row, wrap, flex-start, center);
+  }
+  p{
+    width: 100%;
+    .flex(row, wrap, flex-start, center);
+  }
+}
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -131,6 +144,8 @@
           
           .walk-img {
             width: 100%;
+            border: 3px solid green;
+            height: auto;
             margin: 0 auto;
            .flex(column, wrap, center, center);
             order: -50;

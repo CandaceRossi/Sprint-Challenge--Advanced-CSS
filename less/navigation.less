@@ -25,13 +25,13 @@
     width: 100%;
     .pad(0px, 0px, 5px, 10px);
     .flex( column, nowrap, center, flex-start);
-        
+}
      @media @phone {
             .intro {
             width: 100%;
             margin: 0 auto;
-            .pad(0px, 0px, 5px, 5px);
-            .flex( column, nowrap, flex-start, center);
+            padding: 5px;
+            .flex( column, wrap, flex-start, center);
             }
             
         }
@@ -39,46 +39,44 @@
         img {
             .pad(5px, 0px, 0, 0);
             border-radius: 8px;
-        
+        }
             @media @phone {
-                .flex(column, wrap, flex-start, center);
-                width: 100%;
-                margin: 0 auto;
+
+                // .flex(column, wrap, flex-start, center);
+                // width: 100%;
+                // margin: 0 auto;
                 img {
+                
                     width: 100%;
                     margin: 0 auto;
                 }
             }
-        }
+        
             h2 {
                .pad(0px, 10px, 0, 0);
             }
 
             @media @phone {
                 p {
-                    // width: 100%;
-                    // justify-content: flex-start;
-                    // margin: auto;
-                    // padding: none;
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin: auto;
+                    padding: 0px;
                 }
-            }
-            
-}
-
-@media @phone {
-
-    .space-images {
-            width: 100%;
-            height: auto;
-            margin: auto;
-           .flex(row, wrap, center, center);
-            border: 1px solid red;
-    }
+           
+                .space-images {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    .flex(column, nowrap, center, center);
+                    border: 1px solid red;
+                }
+            }   
 
         .blast {
-            width: 100%;
-            height: auto;
-            margin: auto;
+            // width: 100%;
+            // height: auto;
+            margin: 0auto;
             border: 1px solid red;
         }
         .sky {
@@ -87,7 +85,6 @@
         .launch {
             display: none;
         }
-    }
 
 
 
